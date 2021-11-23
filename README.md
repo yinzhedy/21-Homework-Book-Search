@@ -1,7 +1,7 @@
 # 21-Homework-Book-Search
 
 ## Description:
-Refactored code to turn it into a working MERN stack application.
+Refactored code to turn it into a working MERN stack application. Application searches for books by user input through the Google API and saves to user profile. User log in and sign up function. Can store books selected by user to the user database.
 
 
 ## Table of Contents
