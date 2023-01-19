@@ -3,6 +3,7 @@ const path = require('path');
 // will have to import Apollo Server from apollo-server-express here
 const { ApolloServer } = require('apollo-server-express');
 
+
 // after this line, we can use gql from apollo-server-express
 // next will have to import typeDefs and resolvers from schema
 
@@ -15,7 +16,9 @@ const app = express();
 const server = new ApolloServer({
     typeDefs,
     resolvers,
-    context:authMiddleware
+    context:authMiddleware,
+    uri: 'https://upenn-assignment-19-book-search.onrender.com/',
+
 });
 
 server.applyMiddleware({ app });
